@@ -1,0 +1,13 @@
+C:\Users\danie\source\repos\Churras\ChurrasRepository\bin\Debug\netcoreapp3.1\ChurrasRepository.deps.json
+C:\Users\danie\source\repos\Churras\ChurrasRepository\bin\Debug\netcoreapp3.1\ChurrasRepository.dll
+C:\Users\danie\source\repos\Churras\ChurrasRepository\bin\Debug\netcoreapp3.1\ChurrasRepository.pdb
+C:\Users\danie\source\repos\Churras\ChurrasRepository\bin\Debug\netcoreapp3.1\ChurrasDomain.dll
+C:\Users\danie\source\repos\Churras\ChurrasRepository\bin\Debug\netcoreapp3.1\ChurrasDomain.pdb
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.csproj.AssemblyReference.cache
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.AssemblyInfoInputs.cache
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.AssemblyInfo.cs
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.csproj.CopyComplete
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.dll
+C:\Users\danie\source\repos\Churras\ChurrasRepository\obj\Debug\netcoreapp3.1\ChurrasRepository.pdb

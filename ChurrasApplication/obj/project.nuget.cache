@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Njy9Gb7bEzlAPp89g1+c7rNSPFS3V0yRAzSKtgd2lNB6ruQCimbBaJVsc61HthpyGJwRTG7hCv0FkKpcrl1pIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\danie\\source\\repos\\Churras\\ChurrasApplication\\ChurrasApplication.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\danie\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\danie\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

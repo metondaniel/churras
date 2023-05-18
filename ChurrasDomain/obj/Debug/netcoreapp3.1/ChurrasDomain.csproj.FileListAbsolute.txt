@@ -1,0 +1,10 @@
+C:\Users\danie\source\repos\Churras\ChurrasDomain\bin\Debug\netcoreapp3.1\ChurrasDomain.deps.json
+C:\Users\danie\source\repos\Churras\ChurrasDomain\bin\Debug\netcoreapp3.1\ChurrasDomain.dll
+C:\Users\danie\source\repos\Churras\ChurrasDomain\bin\Debug\netcoreapp3.1\ChurrasDomain.pdb
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.csproj.AssemblyReference.cache
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.AssemblyInfoInputs.cache
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.AssemblyInfo.cs
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.csproj.CoreCompileInputs.cache
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.dll
+C:\Users\danie\source\repos\Churras\ChurrasDomain\obj\Debug\netcoreapp3.1\ChurrasDomain.pdb
