@@ -5,6 +5,7 @@ using ChurrasDomain.Interfaces.Service;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Churras.Controllers
@@ -13,13 +14,11 @@ namespace Churras.Controllers
     [Route("[controller]")]
     public class ChurrasController : ControllerBase
     {
-        private readonly ILogger<UserController> _logger;
         private IChurrasService _churrasService;
-        private Mapper _mapper;
+        private IMapper _mapper;
 
-        public ChurrasController(ILogger<UserController> logger, IChurrasService churrasService, Mapper mapper)
+        public ChurrasController(IChurrasService churrasService, IMapper mapper)
         {
-            _logger = logger;
             _churrasService = churrasService;
             _mapper = mapper;
         }
@@ -45,6 +44,36 @@ namespace Churras.Controllers
             {
                 await _churrasService.Update(Id,_mapper.Map<Churrasco>(churrasViewModel));
                 return Ok(true);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(false);
+            }
+
+        }
+
+        [HttpGet("Id")]
+        public async Task<ActionResult<bool>> Get(int Id)
+        {
+            try
+            {
+                var churrasco = await _churrasService.GetById(Id);
+                var result = _mapper.Map<ChurrasViewModel>(await _churrasService.GetById(Id));
+                result.Total = churrasco.ChurrasParticipante.Sum(x => x.Valor);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(false);
+            }
+
+        }
+        [HttpGet]
+        public async Task<ActionResult<bool>> GetByFilter(Churrasco churras)
+        {
+            try
+            {
+                return Ok(await _churrasService.Find(x=>x.Data == churras.Data || x.Descricao.Contains(churras.Descricao)));
             }
             catch (Exception ex)
             {

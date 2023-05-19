@@ -16,7 +16,7 @@ namespace ChurrasApplication
             CreateMap<ChurrasParticipanteViewModel, ChurrasParticipante>();
             CreateMap<ChurrasParticipante, ChurrasParticipanteViewModel>();
             CreateMap<ParticipanteViewModel, Participante>();
-            CreateMap<Participante, ChurrasParticipanteViewModel>();
+            CreateMap<Participante, ParticipanteViewModel>();
         }
     }
 }

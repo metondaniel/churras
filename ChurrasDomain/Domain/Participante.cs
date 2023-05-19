@@ -7,7 +7,7 @@ namespace ChurrasDomain.Domain
     public class Participante
     {
         public int Id { get; set; }
-        public string Name { get; set; }
+        public string Nome { get; set; }
         public int UserId { get; set;}
         public virtual List<ChurrasParticipante> ChurrasParticipante { get; set;}
     }

@@ -13,13 +13,10 @@ namespace Churras.Controllers
     [Route("[controller]")]
     public class UserController : ControllerBase
     {
-
-        private readonly ILogger<UserController> _logger;
         private IUserService _userService;
 
-        public UserController(ILogger<UserController> logger, IUserService userService)
+        public UserController( IUserService userService)
         {
-            _logger = logger;
             _userService = userService;
         }
 

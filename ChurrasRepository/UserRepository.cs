@@ -6,7 +6,7 @@ using System.Text;
 
 namespace ChurrasRepository
 {
-    internal class UserRepository : RepositoryBase<User>
+    public class UserRepository : RepositoryBase<User>, IUserRepository
     {
         public UserRepository(ChurrasDBContext context) : base(context)
         {

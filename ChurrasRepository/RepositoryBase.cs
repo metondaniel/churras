@@ -19,10 +19,12 @@ namespace ChurrasRepository
         public async Task Add(T entity)
         {
             await _context.Set<T>().AddAsync(entity);
+            _context.SaveChanges();
         }
         public async Task AddRange(IEnumerable<T> entities)
         {
             await _context.Set<T>().AddRangeAsync(entities);
+            _context.SaveChanges();
         }
         public async Task<IEnumerable<T>> Find(Expression<Func<T, bool>> expression)
         {
@@ -32,17 +34,19 @@ namespace ChurrasRepository
         {
             return await _context.Set<T>().ToListAsync();
         }
-        public async Task<T> GetById(int id)
+        public virtual async Task<T> GetById(int id)
         {
             return await _context.Set<T>().FindAsync(id);
         }
         public async Task Remove(T entity)
         {
             _context.Set<T>().Remove(entity);
+            _context.SaveChanges();
         }
         public async Task RemoveRange(IEnumerable<T> entities)
         {
             _context.Set<T>().RemoveRange(entities);
+            _context.SaveChanges();
         }
     }
 }

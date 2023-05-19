@@ -16,7 +16,7 @@ namespace ChurrasRepository
         public async Task<bool> Update(int Id, Participante participante)
         {
             Participante participanteEntity = await GetById(Id);
-            participanteEntity.Name = participante.Name;
+            participanteEntity.Nome = participante.Nome;
 
             _context.Set<Participante>().Update(participanteEntity);
             _context.SaveChanges();

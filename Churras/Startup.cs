@@ -1,5 +1,8 @@
 using AutoMapper;
 using ChurrasApplication;
+using ChurrasDomain.Interfaces.Repository;
+using ChurrasDomain.Interfaces.Service;
+using ChurrasDomain.Service;
 using ChurrasRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,17 +33,28 @@ namespace Churras
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-
-            services.AddDbContext<ChurrasDBContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-
             var mapperConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new MappingProfile());
             });
-
             IMapper mapper = mapperConfig.CreateMapper();
             services.AddSingleton(mapper);
+            services.AddDbContext<ChurrasDBContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped<IChurrasParticipanteRepository,ChurrasParticipanteRepository>();
+            services.AddScoped<IChurrasRepository, ChurrascoRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IParticipanteRepository, ParticipanteRepository>();
+
+            services.AddScoped<IChurrasService, ChurrascoService>();
+            services.AddScoped<IChurrasParticipanteService, ChurrasParticipanteService>();
+            services.AddScoped<IParticipanteService, ParticipanteService>();
+            services.AddScoped<IUserService, UserService>();
+
+            services.AddSwaggerGen();
+            services.AddMvc();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -60,6 +74,13 @@ namespace Churras
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+            });
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Churras API");
             });
         }
     }

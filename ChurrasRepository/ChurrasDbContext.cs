@@ -8,7 +8,7 @@ namespace ChurrasRepository
 {
     public partial class ChurrasDBContext : DbContext
     {
-        public ChurrasDBContext(DbContextOptions<DbContext> options) : base(options)
+        public ChurrasDBContext(DbContextOptions<ChurrasDBContext> options) : base(options)
         {
         }
         public DbSet<Churrasco> Churras { get; set; }

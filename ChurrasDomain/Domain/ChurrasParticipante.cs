@@ -11,6 +11,6 @@ namespace ChurrasDomain.Domain
         public virtual Churrasco Churras { get; set; }
         public int ParticipanteId { get; set; }
         public virtual Participante Participante { get; set; }
-        public decimal Valor { get; set; }
+        public virtual decimal Valor { get; set; }
     }
 }

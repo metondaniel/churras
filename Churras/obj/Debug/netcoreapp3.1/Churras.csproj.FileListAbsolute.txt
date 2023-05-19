@@ -69,3 +69,10 @@ C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\runtimes\uni
 C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\danie\source\repos\Churras\Churras\obj\Debug\netcoreapp3.1\Churras.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\danie\source\repos\Churras\Churras\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
